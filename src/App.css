@@ -249,8 +249,8 @@ input[data-error] {
     flex-direction: column;
   }
   .container-1 {
-    min-height: 30vh;
-    max-height: 50vh;
+    min-height: 28rem;
+    max-height: 28rem;
 
   }
   .container-2 {
