@@ -20,7 +20,6 @@ img {
   min-width: 30%;
   max-height: 100vh;
   position: relative;
-  border: 2px solid red;
 }
 
 
@@ -88,7 +87,6 @@ img {
 .form-row {
   margin-top: 2rem;
   margin-bottom: 2rem;
-
 }
 
 legend {
@@ -146,6 +144,11 @@ legend {
   cursor: pointer;
 }
 
+.submit-button:hover {
+  background-color: rgb(131, 41, 131);
+  transition: .25s;
+
+}
 input[data-error] {
 
 }
@@ -158,7 +161,6 @@ input[data-error] {
 
 .card-container {
   position:relative;
-  border: 2px solid red;
   page-break-after: always;
 
 
@@ -211,11 +213,34 @@ input[data-error] {
 .front-card,
 .back-card {
   position: absolute;
-  border: 2px solid lime;
 
 }
 
 .card-container {
+}
+
+
+.complete-container {
+  min-width: 341px;
+}
+
+.complete-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.thanks {
+  font-size: 1.75rem;
+  color: rgb(42, 0, 42);
+  font-weight: 400;
+
+}
+
+.complete {
+  color: black;
 
 }
 
@@ -225,12 +250,15 @@ input[data-error] {
   }
   .container-1 {
     min-height: 30vh;
+    max-height: 50vh;
+
   }
   .container-2 {
     padding-top: 4rem;
     padding-bottom: 4rem;
 
   }
+
 
 }
 
@@ -246,21 +274,26 @@ input[data-error] {
     min-width: 20%;
   }
 
+
 }
 
-@media (min-width: 940px) {
+@media (min-width: 941px) {
 
 
   .front-card {
     z-index: 3;
     bottom: revert;
     margin-left: 0;
+    top: 18%;
+    left: 30%;
   }
   .back-card {
     z-index: 2;
     right: revert;
     top: revert;
     margin-right: 0;
+    bottom: 18%;
+    left: 40%;
   }
 
   .front-card,
@@ -268,4 +301,18 @@ input[data-error] {
     position: block;
   }
 
+
 }
+
+.form {
+  padding-left: 12rem;
+  z-index: 99;
+}
+
+
+@media (max-width: 940px) {
+  .form {
+    padding-left: 0;
+  }
+}
+
