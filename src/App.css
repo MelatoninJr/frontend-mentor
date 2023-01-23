@@ -6,7 +6,9 @@
 }
 
 
-
+img {
+  display: block;
+}
 .home-container {
   display: flex;
   min-height: 100vh;
@@ -16,23 +18,12 @@
 .container-1 {
   display: flex;
   min-width: 30%;
-  object-fit: contain;
+  max-height: 100vh;
   position: relative;
+  border: 2px solid red;
 }
 
-.card-container {
-  display: none;
-  position: absolute;
-  top: 20%;
-  left: 35%;
-}
 
-.card-container-2 {
-  display: none;
-  position: absolute;
-  top: 55%;
-  left: 60%
-}
 
 .container-2 {
   display: flex;
@@ -61,6 +52,9 @@
 .form-container > input[type=text] {
   display: flex;
   
+}
+.form-container > input[type=text]:invalid {
+  border: 1px solid red;
 }
 
 .generic-input {
@@ -94,7 +88,6 @@
 .form-row {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border: 2px solid greenyellow;
 
 }
 
@@ -157,8 +150,73 @@ input[data-error] {
 
 }
 
+
 .background-img {
   max-height: 100vh;
+  min-width: 100%;
+}
+
+.card-container {
+  position:relative;
+  border: 2px solid red;
+  page-break-after: always;
+
+
+}
+.front-card {
+  z-index: 3;
+  bottom: -2rem;
+  margin-left: 2rem;
+}
+
+.back-card {
+  z-index: 2;
+  right: 0;
+  top: 2rem;
+  margin-right: 2rem;
+}
+.card-logo,
+.card-number,
+.card-date,
+.card-name {
+  position: absolute;
+}
+
+.card-logo {
+  top: 2rem;
+  left: 2rem;
+
+}
+
+.card-name {
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+}
+
+.card-number {
+  bottom: 6rem;
+  left: 2rem;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.card-date {
+  bottom: 2rem;
+  right: 2rem;
+  color: white;
+}
+
+.front-card,
+.back-card {
+  position: absolute;
+  border: 2px solid lime;
+
+}
+
+.card-container {
+
 }
 
 @media  (max-width: 940px) {
@@ -167,6 +225,11 @@ input[data-error] {
   }
   .container-1 {
     min-height: 30vh;
+  }
+  .container-2 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
   }
 
 }
@@ -181,6 +244,28 @@ input[data-error] {
   }
   .box-sm {
     min-width: 20%;
+  }
+
+}
+
+@media (min-width: 940px) {
+
+
+  .front-card {
+    z-index: 3;
+    bottom: revert;
+    margin-left: 0;
+  }
+  .back-card {
+    z-index: 2;
+    right: revert;
+    top: revert;
+    margin-right: 0;
+  }
+
+  .front-card,
+  .back-card {
+    position: block;
   }
 
 }
