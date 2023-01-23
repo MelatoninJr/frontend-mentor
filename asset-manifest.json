@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontend-mentor/static/css/main.8333789f.css",
+    "main.css": "/frontend-mentor/static/css/main.808f105c.css",
     "main.js": "/frontend-mentor/static/js/main.9971ead7.js",
     "static/media/bg-main-desktop.png": "/frontend-mentor/static/media/bg-main-desktop.806e7aa7b4dbc1d78bc3.png",
     "static/media/bg-card-back.png": "/frontend-mentor/static/media/bg-card-back.23f68fa3aa3d5b33dfc8.png",
@@ -9,11 +9,11 @@
     "index.html": "/frontend-mentor/index.html",
     "static/media/icon-complete.svg": "/frontend-mentor/static/media/icon-complete.8fd757c0c5c44b1d597ca411400e046d.svg",
     "static/media/card-logo.svg": "/frontend-mentor/static/media/card-logo.8ca9036515954c3f8191559dce9c7bdf.svg",
-    "main.8333789f.css.map": "/frontend-mentor/static/css/main.8333789f.css.map",
+    "main.808f105c.css.map": "/frontend-mentor/static/css/main.808f105c.css.map",
     "main.9971ead7.js.map": "/frontend-mentor/static/js/main.9971ead7.js.map"
   },
   "entrypoints": [
-    "static/css/main.8333789f.css",
+    "static/css/main.808f105c.css",
     "static/js/main.9971ead7.js"
   ]
 }
